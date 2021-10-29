@@ -12,12 +12,9 @@ class BaseModel():
     def __init__(self, *args, **kwargs):
         """Method Init"""
         if kwargs:
-            for key in kwargs:
-                if key in ('create_at', 'updated_at'):
-                    kwargs[key] = datetime.strptime(kwargs[keys],
-                                                   '%Y-%m-%dT%H:%M:%S.%f')
-                if key != ('__class__'):
-                    setattr(self, key, kwargs([key])
+            for key in ('create_at', 'updated_at'):
+                kwargs[key] = datetime.strptime(kwargs[keys],
+                                                '%Y-%m-%dT%H:%M:%S.%f')
 
         else:
             self.id = str(uuid.uuid4())
