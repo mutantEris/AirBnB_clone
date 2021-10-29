@@ -16,6 +16,7 @@ class BaseModel():
                 kwargs[key] = datetime.strptime(kwargs[keys],
                                                 '%Y-%m-%dT%H:%M:%S.%f')
 
+                self.__dict__[key]
         else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
