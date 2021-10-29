@@ -27,3 +27,10 @@ class BaseModel:
         bndict['created_at'] = self.created_at.strftime("%Y-%m-%dT%H:%M:%S.%f")
         bndict['updated_at'] = self.created_at.strftime("%Y-%m-%dT%H:%M:%S.%f")
         return bndict
+
+    def __init__(self, **kwargs):
+        """ behold the... init?"""
+        if kwargs:
+            for key in ('created_at', 'updated_at'):
+                kwargs[key] = datetime.strptime(kwargs[keys],
+                                                '%Y-%m-%dT%H:%M:%S.%f')
