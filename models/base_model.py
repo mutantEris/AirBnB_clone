@@ -1,15 +1,24 @@
 #!/usr/bin/python3
 """the base model"""
+
+
 import uuid
 from datetime import datetime
+import models
 
 
-class BaseModel:
+class BaseModel():
+    """ Class BaseModel"""
     def __init__(self, *args, **kwargs):
-        """the base model"""
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        """Method Init"""
+        if kwargs:
+            for key in ('created_at', 'updated_at'):
+                kwargs[key] = datetime.strptime(kwargs[keys],
+                                                '%Y-%m-%dT%H:%M:%S.%f')
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = datetime.now()
+            self.update_at = datetime.now()
 
     def __str__(self):
         """behold string"""
@@ -24,13 +33,6 @@ class BaseModel:
         """behold the dictionary"""
         bndict = self.__dict__.copy()
         bndict['__class__'] = self.__class__.__name__
-        bndict['created_at'] = self.created_at.strftime("%Y-%m-%dT%H:%M:%S.%f")
-        bndict['updated_at'] = self.created_at.strftime("%Y-%m-%dT%H:%M:%S.%f")
+        bndict['created_at'] = self.created_at.isoformat()
+        bndict['updated_at'] = self.created_at.isoformat()
         return bndict
-
-    def __init__(self, **kwargs):
-        """ behold the... init?"""
-        if kwargs:
-            for key in ('created_at', 'updated_at'):
-                kwargs[key] = datetime.strptime(kwargs[keys],
-                                                '%Y-%m-%dT%H:%M:%S.%f')
