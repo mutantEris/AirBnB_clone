@@ -13,13 +13,14 @@ class BaseModel():
         """Method Init"""
         if kwargs:
             for key, value in kwargs.items():
-                if key in ('created_at', 'updated_at'):
+                if key is ('created_at', 'updated_at'):
                     value = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
-
+                self.__dict__[key] = value
         else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.update_at = datetime.now()
+            models.storage.new(self)
 
     def __str__(self):
         """behold string"""
@@ -29,6 +30,7 @@ class BaseModel():
     def save(self):
         """behold save"""
         self.update_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """behold the dictionary"""
