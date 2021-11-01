@@ -38,5 +38,5 @@ class BaseModel():
         bndict = self.__dict__.copy()
         bndict['__class__'] = self.__class__.__name__
         bndict['created_at'] = self.created_at.isoformat()
-        bndict['updated_at'] = self.created_at.isoformat()
+        bndict['updated_at'] = self.updated_at.isoformat()
         return bndict
