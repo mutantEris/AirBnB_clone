@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import cmd
 """this is, in fact, the console"""
+import cmd
 
 
 class HBNBCommand(cmd.Cmd):
+    """command prompt"""
     prompt = "(hbnb)"
 
     def do_quit(self, args):
