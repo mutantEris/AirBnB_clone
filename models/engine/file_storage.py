@@ -6,6 +6,7 @@ Module used to store objects into Json file
 import models
 import json
 
+
 class FileStorage:
     '''Class FileStorage'''
 
