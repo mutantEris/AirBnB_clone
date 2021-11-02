@@ -34,7 +34,7 @@ class HBNBCommand(cmd.Cmd):
     def do_destroy(self, args):
         """Destroys an instance of BaseModel"""
         if != args:
-            return print("** class name missing **")
+            print("** class name missing **")
 	elif args != "BaseModel":
             print("** class doesn't exist **")
         elif id == "":
