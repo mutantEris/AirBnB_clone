@@ -25,7 +25,7 @@ class TestBaseModel(unittest.TestCase):
 
     def TestKwargs(self):
         ''' Test Kwargs'''
-        temp_dict = {"updated_at": "2021-11-01T22:14:420127",
+        temp_dic = {"updated_at": "2021-11-01T22:14:420127",
                     "created_at": "2021-11-01T22:14:420127",
                     "id": "123abc",
                     "__class__": "BaseModel"}
@@ -39,8 +39,8 @@ class TestBaseModel(unittest.TestCase):
     def TestStr(self):
         ''' Test Str '''
         tmb = BaseModel()
-        self.assertEqual(str(tmb), "[BaseModel] ({}) {}".format
-                                    (b.id, b.__dict__))
-        
+        self.assertEqual(str(tmb), "[BaseModel] ({}) {}".
+                         format(b.id, b.__dict__))
+
 if __name__ == '__main__':
     unittest.main()
