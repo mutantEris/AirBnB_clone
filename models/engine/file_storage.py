@@ -25,8 +25,9 @@ class FileStorage:
 
     def save(self):
         '''class save'''
-
         new_dict = {}
+        for key, value in self.__objects.items():
+            new_dict[key] = value.to_dict()
 
     def reload(self):
         '''class reload'''
