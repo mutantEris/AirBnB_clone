@@ -21,7 +21,7 @@
     position: relative;
     top: 50;
     cursor: pointer;
-    transform: translateY(+21%);
+    transform: translateY(+22.5%);
 }
 
 button:hover {
