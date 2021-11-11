@@ -28,14 +28,14 @@ button:hover {
     opacity: 0.9;
 }
 
-locations {
+.locations {
     height: 100%;
     width: 25%;
     border-right: 1px solid #dddddd;
     text-align: left;
 }
 
-amenities {
+.amenities {
     height: 100%;
     width: 25%;
     text-align: left;
