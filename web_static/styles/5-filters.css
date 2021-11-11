@@ -24,7 +24,7 @@
     position: relative;
     top: 50;
     cursor: pointer;
-    transform: translateX(150%);
+    transform: translateX(135%);
 }
 
 button:hover {
