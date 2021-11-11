@@ -9,7 +9,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transform: translateX(50%);
 }
 
 .filters button {
@@ -25,6 +24,7 @@
     position: relative;
     top: 50;
     cursor: pointer;
+    transform: translateX(50%);
 }
 
 button:hover {
