@@ -48,7 +48,7 @@ button:hover {
     visibility: visible;
 }
 
-.amenities:hover .popover {
+.amenities:hover .popoveralls {
     visibility: visible;
 }
 
@@ -94,7 +94,7 @@ li, ul {
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     width: 90%;
-    margin-top: -10px;
+    margin-top: -1px;
     padding-bottom: 10px;
     padding-left: 24px;
     padding-right: 0px;
