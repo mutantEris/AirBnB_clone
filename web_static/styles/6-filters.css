@@ -68,6 +68,6 @@ button:hover {
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    margin-top:5px;
-    align: left;
+    margin-top: 5px;
+    float: left;
 }
