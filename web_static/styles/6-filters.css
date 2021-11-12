@@ -67,5 +67,11 @@ button:hover {
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    
+    text-align: left;
+    margin-right: 1px;
+    margin-bottom: 2px;
    }
+
+li, ul {
+    list-style-type: none;
+}
