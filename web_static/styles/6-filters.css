@@ -67,7 +67,7 @@ button:hover {
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    margin-top: 25px;
+    width: 100%
    }
 
 li, ul {
