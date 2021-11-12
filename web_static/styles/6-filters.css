@@ -87,3 +87,15 @@ button:hover {
 li, ul {
     list-style-type: none;
 }
+
+.popoveralls {
+    visibility: hidden;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 90%;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 0px;
+}
