@@ -37,7 +37,7 @@ button:hover {
     text-align: left;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
 }
 .locations:hover .popover {
@@ -68,7 +68,7 @@ button:hover {
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 1px;
     padding-bottom: 5px;
    }
 
