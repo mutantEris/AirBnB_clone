@@ -38,10 +38,10 @@ button:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .locations:hover .popover {
-    display: block
+    visibility: visible;
 }
 .amenities {
     height: 100%;
@@ -63,12 +63,13 @@ button:hover {
 }
 
 .popover {
-    display: none;
+    visibility: hidden;
     background-color: #FAFAFA;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 25px;
+    padding-bottom: 5px;
    }
 
 li, ul {
